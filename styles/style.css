@@ -262,7 +262,7 @@ nav ul a:hover{
 
 /* -------- Mobile Device --------- */
 
-@media only screen and (max-width:688px){
+@media only screen and (max-width:767px){
 
     .hero{
         flex-direction: column;
@@ -285,6 +285,45 @@ nav ul a:hover{
     .highlights{
         flex-direction: column;
     }
+
+
+    .hl-banner{
+        margin-top: 50px;
+    }
+
+    .hl-banner img{
+        transform: scale(.7);
+    }
+}
+
+
+
+
+/* -------- Tablet Device --------- */
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+
+    /* .hero{
+        flex-direction: column;
+    } */
+
+
+    .title h1{
+        font-size: 40px;
+    }
+
+
+    .hero .banner img{
+        transform: scale(0.8);
+    }
+
+    .players{
+        grid-template-columns:1fr 1fr;
+    }
+    
+    /* .highlights{
+        flex-direction: column;
+    } */
 
 
     .hl-banner{
