@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    /* margin: 0; */
+    margin: 0;
 }
 
 
@@ -102,7 +102,7 @@ nav ul a:hover{
 }
 
 
-.hero .title h1{
+ h1{
     font-size: 70px;
     line-height: 30px;
 }
@@ -114,20 +114,26 @@ nav ul a:hover{
 }
 
 
-.login-button:hover, .live-button:hover{
+.login-button:hover{
     color: black;
     background-color: white;
     transition: .4s ease-in;
 }
 
 
+.live-button:hover{
+    color: black;
+    background-color: white;
+    transition: .4s ease-in;
+}
+
 
 /*----------------------
     Footballers
 -----------------------*/
 .footballers{
-    
-    margin: 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 
@@ -170,6 +176,122 @@ nav ul a:hover{
 }
 
 
-.align-left{
-    text-align: left;
+
+/*---------------------
+    Highlights Style Part
+------------------------*/
+.lower{
+    margin: 100px 0px;
+    
+}
+
+
+.highlights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.watch-button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color:palevioletred;
+    border-radius: 9px;
+}
+
+
+.watch-button:hover{
+    color: white;
+    background-color: black;
+    transition: .4s ease-in;
+}
+
+
+
+.highlights .hl-banner img{
+    width: 567px;
+    height: 427px;
+}
+
+
+.hl-details{
+    width: 40%;
+}
+
+
+
+/* ----------------------------
+        Lower Banner
+-------------------------------*/
+.lower-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+.lower-banner img{
+    width: 242px;
+    height: 70px;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.h1-smaller{
+    font-size: 40px;
+}
+
+
+/* ------------------------
+        Media Queries
+--------------------------- */
+
+
+/* -------- Mobile Device --------- */
+
+@media only screen and (max-width:688px){
+
+    .hero{
+        flex-direction: column;
+    }
+
+
+    .title h1{
+        font-size: 40px;
+    }
+
+
+    .hero .banner img{
+        transform: scale(0.7);
+    }
+
+    .players{
+        grid-template-columns: 1fr;
+    }
+    
+    .highlights{
+        flex-direction: column;
+    }
+
+
+    .hl-banner{
+        margin-top: 50px;
+    }
+
+    .hl-banner img{
+        transform: scale(.7);
+    }
 }
